@@ -11,7 +11,9 @@
 /* .title */
 
 header {
-    background-color: #73C2D1;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
 }
 
 header a {
@@ -32,6 +34,7 @@ header a {
     text-transform: uppercase;
     line-height: 24px;
     letter-spacing: 2px;
+    font-size: 24px;
 }
 
 /* navbar */
@@ -56,6 +59,29 @@ header a {
 
 /*  */
 
-.navbar__icon {
+.action {
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.action__icon {
+    text-transform: uppercase;
+    padding: 16px 40px;
+    border: none;
+    margin: 0px 8px;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 24px;
+    cursor: pointer;
+}
+
+.action__icon--login {
+    background-color: #7B61FF;
     color: #fff;
+}
+
+.action__icon--register {
+    color: #7B61FF;
+    background-color: #fff;
 }
