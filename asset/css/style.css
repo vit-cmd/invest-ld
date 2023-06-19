@@ -5,13 +5,13 @@
 }
 
 .content {
-    margin: auto 22rem;
+    margin: auto 375px;
 }
 
 /* .title */
 
 header {
-    position: fixed;
+    position: absolute;
     width: 100%;
     z-index: 1;
 }
@@ -84,4 +84,92 @@ header a {
 .action__icon--register {
     color: #7B61FF;
     background-color: #fff;
+}
+
+.hero {
+    position: relative;
+}
+
+.hero__content {
+    position: absolute;
+    width: 40%;
+    top: 328px;
+    left: 372px;
+    color: #fff;
+}
+
+.circle {
+    height: 558px;
+    width: 558px;
+    background-color: rgba(51, 110, 225, 0.5);
+    border-radius: 50%;
+    display: inline-block;
+    position: absolute;
+    color: #fff;
+    top: 180px;
+    left: 227px;
+}
+
+.hero__content--title {
+    font-weight: bold;
+    line-height: 80px;
+    font-size: 60px;
+    width: 100%;
+}
+
+.hero__content--description {
+    width: 60%;
+    font-size: 24px;
+    line-height: 32px;
+    margin: 40px 0;
+}
+
+.btn--get-started {
+    border: none;
+    width: 270px;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 24px;
+    padding: 24px 40px 22px;
+    cursor: pointer;
+    background: #7B61FF;
+}
+
+.hero__content--group {
+    z-index: 1;
+}
+
+.content--title {
+    padding-top: 160px;
+    margin: auto;
+    text-align: center;
+    width: 70%;
+}
+
+.content--title h1 {
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 64px;
+}
+
+.content--title p {
+    font-size: 24px;
+    color: #7f7f7f;
+    line-height: 32px;
+}
+
+/* list invest */
+
+.list--card {
+    margin-top: 60px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.card {
+    display: block;
+    margin: 0 0 40px 0px;
+    flex-basis: calc(100%/3 - 24px);
 }
